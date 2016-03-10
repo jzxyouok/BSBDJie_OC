@@ -1,0 +1,14 @@
+//
+//  BSPrefix.pch
+//  BSBDJie
+//
+//  Created by shengguoqiang on 16/3/10.
+//  Copyright © 2016年 shengguoqiang. All rights reserved.
+//
+
+#ifndef BSPrefix_pch
+#define BSPrefix_pch
+
+#import "UIView+BSExtension.h"
+
+#endif
