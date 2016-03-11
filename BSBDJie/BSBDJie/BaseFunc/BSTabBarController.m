@@ -11,6 +11,7 @@
 #import "BSNewViewController.h"
 #import "BSFriendTrendsViewController.h"
 #import "BSMeViewController.h"
+#import "BSNavigationController.h"
 #import "BSTabBar.h"
 
 @interface BSTabBarController ()
@@ -44,7 +45,8 @@
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
-    [self addChildViewController:vc];
+    BSNavigationController *nav = [[BSNavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
 }
 
 - (void)didReceiveMemoryWarning {

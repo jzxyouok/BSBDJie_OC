@@ -10,5 +10,6 @@
 #define BSPrefix_pch
 
 #import "UIView+BSExtension.h"
+#import "UIBarButtonItem+BSExtension.h"
 
 #endif
