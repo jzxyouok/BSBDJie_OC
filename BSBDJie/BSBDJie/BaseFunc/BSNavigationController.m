@@ -30,23 +30,7 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.viewControllers.count > 0) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//        button.backgroundColor = [UIColor greenColor];
-        button.size = CGSizeMake(70, 30);
-        [button setTitle:@"返回" forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-        button.titleLabel.font = [UIFont systemFontOfSize:14];
-        [button setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-        [button setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
-        [button addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
-        
-//        [button sizeToFit];
-        button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        button.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
-        
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-        
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTitle:@"返回" bounds:CGSizeMake(70, 30) font:[UIFont systemFontOfSize:14] Image:@"navigationButtonReturn" highlightImage:@"navigationButtonReturnClick" target:self action:@selector(backClick)];
         viewController.hidesBottomBarWhenPushed = YES;
     }
     

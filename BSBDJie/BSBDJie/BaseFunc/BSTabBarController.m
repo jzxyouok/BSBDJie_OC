@@ -20,13 +20,15 @@
 
 @implementation BSTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
++ (void)initialize {
     //设置tabbar文字属性
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
     [item setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     //添加子控制器
     [self setChildVC:[BSEssenceViewController new] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
