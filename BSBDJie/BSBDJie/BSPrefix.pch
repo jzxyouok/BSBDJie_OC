@@ -9,7 +9,17 @@
 #ifndef BSPrefix_pch
 #define BSPrefix_pch
 
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
 #import "UIView+BSExtension.h"
 #import "UIBarButtonItem+BSExtension.h"
 
+#ifdef DEBUG
+#define BSLog(...) NSLog(__VA_ARGS__)
+#else
+#define BSLog(...)
 #endif
+
+#endif
+
+
