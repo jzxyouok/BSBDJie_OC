@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BSRecommendViewController">
             <connections>
+                <outlet property="categoryTab" destination="yt2-QQ-UyT" id="XBm-6X-zGK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,25 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-QQ-UyT">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="hm6-UL-jCH"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vlS-p1-piT"/>
+                        <outlet property="delegate" destination="-1" id="U72-Gl-NAa"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yt2-QQ-UyT" secondAttribute="bottom" id="1eP-Tm-FPO"/>
+                <constraint firstItem="yt2-QQ-UyT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eM9-UE-oqm"/>
+                <constraint firstItem="yt2-QQ-UyT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fL0-G2-b0l"/>
+            </constraints>
+            <point key="canvasLocation" x="219" y="52"/>
         </view>
     </objects>
 </document>
