@@ -25,4 +25,15 @@
  */
 @property (nonatomic,copy) NSString *name;
 
+
+/**
+ *  当前页
+ */
+@property (nonatomic,assign) NSInteger currentPage;
+
+/**
+ *  数组
+ */
+@property (nonatomic,strong) NSMutableArray *users;
+
 @end

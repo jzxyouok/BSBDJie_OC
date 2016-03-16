@@ -23,6 +23,9 @@
     
     //导航栏leftItem
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highlightImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+    
+    //背景
+    self.view.backgroundColor = BSGlobalBg;
 }
 
 - (void)friendsClick {
