@@ -7,6 +7,7 @@
 //
 
 #import "BSEssenceViewController.h"
+#import "BSTagViewController.h"
 
 @interface BSEssenceViewController ()
 
@@ -25,7 +26,8 @@
 }
 
 - (void)tagClick {
-    NSLog(@"tag");
+    BSTagViewController *tag = [[BSTagViewController alloc] init];
+    [self.navigationController pushViewController:tag animated:YES];
 }
 
 @end

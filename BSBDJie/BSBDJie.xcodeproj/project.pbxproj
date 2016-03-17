@@ -17,6 +17,11 @@
 		8A49FA161C92AC4400DD53FB /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A49FA0B1C92AC4400DD53FB /* BSMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8A49FA171C92AC4400DD53FB /* BSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A49FA111C92AC4400DD53FB /* BSNewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8A6878A11C96624E00C716C7 /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6878A01C96624E00C716C7 /* BSFriendTrendsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8A7171841C9B71E3003364AC /* BSTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7171821C9B71E3003364AC /* BSTagViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8A7171851C9B71E3003364AC /* BSTagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A7171831C9B71E3003364AC /* BSTagViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8A7171881C9B72B3003364AC /* BSTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7171871C9B72B3003364AC /* BSTag.m */; settings = {ASSET_TAGS = (); }; };
+		8A71718C1C9B73E6003364AC /* BSTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A71718A1C9B73E6003364AC /* BSTagCell.m */; settings = {ASSET_TAGS = (); }; };
+		8A71718D1C9B73E6003364AC /* BSTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A71718B1C9B73E6003364AC /* BSTagCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8A8E26981C91798C0090C2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E26971C91798C0090C2F7 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		8A8E269B1C9179B40090C2F7 /* UIView+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E269A1C9179B40090C2F7 /* UIView+BSExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8A9F69561C911176008C3A55 /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F69551C911176008C3A55 /* BSTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +56,14 @@
 		8A49FA101C92AC4400DD53FB /* BSNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNewViewController.h; sourceTree = "<group>"; };
 		8A49FA111C92AC4400DD53FB /* BSNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNewViewController.m; sourceTree = "<group>"; };
 		8A6878A01C96624E00C716C7 /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		8A7171811C9B71E3003364AC /* BSTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTagViewController.h; sourceTree = "<group>"; };
+		8A7171821C9B71E3003364AC /* BSTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTagViewController.m; sourceTree = "<group>"; };
+		8A7171831C9B71E3003364AC /* BSTagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSTagViewController.xib; sourceTree = "<group>"; };
+		8A7171861C9B72B3003364AC /* BSTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTag.h; sourceTree = "<group>"; };
+		8A7171871C9B72B3003364AC /* BSTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTag.m; sourceTree = "<group>"; };
+		8A7171891C9B73E6003364AC /* BSTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTagCell.h; sourceTree = "<group>"; };
+		8A71718A1C9B73E6003364AC /* BSTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTagCell.m; sourceTree = "<group>"; };
+		8A71718B1C9B73E6003364AC /* BSTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSTagCell.xib; sourceTree = "<group>"; };
 		8A8E26961C91798C0090C2F7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A8E26971C91798C0090C2F7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8A8E26991C9179B40090C2F7 /* UIView+BSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BSExtension.h"; sourceTree = "<group>"; };
@@ -144,6 +157,9 @@
 			children = (
 				8A49F9FE1C92AC4400DD53FB /* BSEssenceViewController.h */,
 				8A49F9FF1C92AC4400DD53FB /* BSEssenceViewController.m */,
+				8A7171811C9B71E3003364AC /* BSTagViewController.h */,
+				8A7171821C9B71E3003364AC /* BSTagViewController.m */,
+				8A7171831C9B71E3003364AC /* BSTagViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +167,8 @@
 		8A49FA001C92AC4400DD53FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A7171861C9B72B3003364AC /* BSTag.h */,
+				8A7171871C9B72B3003364AC /* BSTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +176,9 @@
 		8A49FA011C92AC4400DD53FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8A7171891C9B73E6003364AC /* BSTagCell.h */,
+				8A71718A1C9B73E6003364AC /* BSTagCell.m */,
+				8A71718B1C9B73E6003364AC /* BSTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,8 +420,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7171851C9B71E3003364AC /* BSTagViewController.xib in Resources */,
 				8A6878A11C96624E00C716C7 /* BSFriendTrendsViewController.xib in Resources */,
 				8AA740B81C968D6400FA40AF /* BSRecommendViewController.xib in Resources */,
+				8A71718D1C9B73E6003364AC /* BSTagCell.xib in Resources */,
 				8AB778791C97DC4100534FD2 /* BSCategoryCell.xib in Resources */,
 				8A0A6AF21C8836EC00EC18E8 /* Assets.xcassets in Resources */,
 				8AB7787E1C97DD5100534FD2 /* BSUserCell.xib in Resources */,
@@ -464,6 +487,9 @@
 			files = (
 				8A3606D61C97AF3D00C12AC8 /* BSCategory.m in Sources */,
 				8AA740B71C968D6400FA40AF /* BSRecommendViewController.m in Sources */,
+				8A7171841C9B71E3003364AC /* BSTagViewController.m in Sources */,
+				8A7171881C9B72B3003364AC /* BSTag.m in Sources */,
+				8A71718C1C9B73E6003364AC /* BSTagCell.m in Sources */,
 				8A49FA141C92AC4400DD53FB /* BSEssenceViewController.m in Sources */,
 				8A0A6AE71C8836EC00EC18E8 /* main.m in Sources */,
 				8AB778781C97DC4100534FD2 /* BSCategoryCell.m in Sources */,
