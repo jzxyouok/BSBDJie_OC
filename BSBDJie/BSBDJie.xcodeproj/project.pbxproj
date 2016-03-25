@@ -10,6 +10,8 @@
 		8A0A6AE71C8836EC00EC18E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6AE61C8836EC00EC18E8 /* main.m */; };
 		8A0A6AF21C8836EC00EC18E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0A6AF11C8836EC00EC18E8 /* Assets.xcassets */; };
 		8A3606D61C97AF3D00C12AC8 /* BSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3606D51C97AF3D00C12AC8 /* BSCategory.m */; settings = {ASSET_TAGS = (); }; };
+		8A38004E1CA4C26200463843 /* BSGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A38004D1CA4C26200463843 /* BSGuideView.m */; settings = {ASSET_TAGS = (); }; };
+		8A3800501CA4C27600463843 /* BSGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A38004F1CA4C27600463843 /* BSGuideView.xib */; settings = {ASSET_TAGS = (); }; };
 		8A49F9F81C92A63600DD53FB /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A49F9F71C92A63600DD53FB /* BSNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		8A49F9FB1C92A89700DD53FB /* UIBarButtonItem+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A49F9FA1C92A89700DD53FB /* UIBarButtonItem+BSExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8A49FA141C92AC4400DD53FB /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A49F9FF1C92AC4400DD53FB /* BSEssenceViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -47,6 +49,9 @@
 		8A0A6AF61C8836EC00EC18E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A3606D41C97AF3D00C12AC8 /* BSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCategory.h; sourceTree = "<group>"; };
 		8A3606D51C97AF3D00C12AC8 /* BSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCategory.m; sourceTree = "<group>"; };
+		8A38004C1CA4C26200463843 /* BSGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGuideView.h; sourceTree = "<group>"; };
+		8A38004D1CA4C26200463843 /* BSGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGuideView.m; sourceTree = "<group>"; };
+		8A38004F1CA4C27600463843 /* BSGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSGuideView.xib; sourceTree = "<group>"; };
 		8A49F9F61C92A63600DD53FB /* BSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
 		8A49F9F71C92A63600DD53FB /* BSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
 		8A49F9F91C92A89700DD53FB /* UIBarButtonItem+BSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BSExtension.h"; sourceTree = "<group>"; };
@@ -151,6 +156,30 @@
 				8A8E269C1C917A660090C2F7 /* BSPrefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3800491CA4C24900463843 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A38004A1CA4C24900463843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A38004B1CA4C24900463843 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A38004C1CA4C26200463843 /* BSGuideView.h */,
+				8A38004D1CA4C26200463843 /* BSGuideView.m */,
+				8A38004F1CA4C27600463843 /* BSGuideView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8A49F9FC1C92AC4400DD53FB /* Essence */ = {
@@ -317,6 +346,9 @@
 		8A8E26941C91795A0090C2F7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8A3800491CA4C24900463843 /* Controller */,
+				8A38004A1CA4C24900463843 /* Model */,
+				8A38004B1CA4C24900463843 /* View */,
 				8A8E26961C91798C0090C2F7 /* AppDelegate.h */,
 				8A8E26971C91798C0090C2F7 /* AppDelegate.m */,
 			);
@@ -441,6 +473,7 @@
 				8A7171851C9B71E3003364AC /* BSTagViewController.xib in Resources */,
 				8A6878A11C96624E00C716C7 /* BSFriendTrendsViewController.xib in Resources */,
 				8AA740B81C968D6400FA40AF /* BSRecommendViewController.xib in Resources */,
+				8A3800501CA4C27600463843 /* BSGuideView.xib in Resources */,
 				8A71718D1C9B73E6003364AC /* BSTagCell.xib in Resources */,
 				8AB778791C97DC4100534FD2 /* BSCategoryCell.xib in Resources */,
 				8A0A6AF21C8836EC00EC18E8 /* Assets.xcassets in Resources */,
@@ -520,6 +553,7 @@
 				8A8E26981C91798C0090C2F7 /* AppDelegate.m in Sources */,
 				8AFBB7E21C9FF45D0083F4CD /* BSTextField.m in Sources */,
 				8A8E269B1C9179B40090C2F7 /* UIView+BSExtension.m in Sources */,
+				8A38004E1CA4C26200463843 /* BSGuideView.m in Sources */,
 				8AB7787D1C97DD5100534FD2 /* BSUserCell.m in Sources */,
 				8A49FA161C92AC4400DD53FB /* BSMeViewController.m in Sources */,
 				8A9F69561C911176008C3A55 /* BSTabBarController.m in Sources */,

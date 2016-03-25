@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#include "BSTabBarController.h"
+#import "BSTabBarController.h"
+#import "BSGuideView.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[BSTabBarController alloc] init];
     [self.window makeKeyAndVisible];
+    
+    //显示引导页
+    [BSGuideView show];
     
     return YES;
 }
